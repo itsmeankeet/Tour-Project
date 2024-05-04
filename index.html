@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour & Travel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-hiking"></i> travel.com</a>
+        <nav class="navbar">
+           <a href="login.php"><i class="fa-solid fa-right-to-bracket"></i>
+                <span>
+                    SignUp | Login
+                </span>
+            </i></a>
+            <a href="./admin/adminloginform.php"><i class="fa-solid fa-lock"></i>
+                <span>Admin Login</span>
+            </a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="wrapper">
+            <div class="box" style="background: url(images/home1.jpg) no-repeat;">
+                <div class="content">
+                    <span>Our Motto</span>
+                    <h3>"Explore. Dream. Discover."</h3>
+                    <p>Connect With us on different social media</p>
+                    <div class="social">
+                        <!-- /*class btn*/ -->
+                        <a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-whatsapp"></ion-icon>                        </a>
+                    </div>
+                    <div class="contact">
+                        <p>Provide your mail. We will contact you soon..</p>
+                    </div>
+                    <div class="newslatter">
+                        <form action="process_form.php" method="post">                                
+                            <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                            <input type="submit" name="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
