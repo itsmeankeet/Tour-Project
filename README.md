@@ -4,12 +4,16 @@ Admin Password: Ankit12
 
 ## Preview:
 
+### This UI will be shown to Admin
 ![Screenshot 223](./output/Screenshot%20(223).png)
 ![Screenshot 224](./output/Screenshot%20(224).png)
 ![Screenshot 225](./output/Screenshot%20(225).png)
 ![Screenshot 226](./output/Screenshot%20(226).png)
 ![Screenshot 227](./output/Screenshot%20(227).png)
-![Screenshot 228](./output/Screenshot%20(228).png)
+
+
+### This UI will be shown to customers
+
 ![Screenshot 229](./output/Screenshot%20(229).png)
 ![Screenshot 230](./output/Screenshot%20(230).png)
 ![Screenshot 231](./output/Screenshot%20(231).png)
