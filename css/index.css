@@ -103,8 +103,6 @@ home {
   }
 
 
-
-/* //paxi add gareko; */
 .social a {
     font-size: 30px;
     height: 37px;
@@ -117,7 +115,6 @@ home {
     padding-left: 3px;
     display: inline-flex;
     color: black;
-    /* margin-bottom: 20px; */
     transition: .4s;
 }
 .social a:hover{
@@ -261,37 +258,35 @@ home {
   }
 }
 
-/* Add media queries for responsiveness */
 @media (max-width: 768px) {
   .home .box {
     padding: 2rem;
     justify-content: center;
-    background-position: center !important; /* Adjust background position */
+    background-position: center !important; 
   }
   .home .content {
-    width: 100%; /* Make the content full width */
-    text-align: center; /* Center align the content */
+    width: 100%; 
+    text-align: center;
   }
   .social a {
-    margin: 10px 5px; /* Adjust margin for social icons */
+    margin: 10px 5px; 
   }
   .newslatter form {
-    width: 80%; /* Adjust width of newsletter form */
-    margin: 0 auto; /* Center align the form */
+    width: 80%; 
+    margin: 0 auto; 
   }
   .newslatter form input:first-child {
-    width: calc(100% - 100px); /* Adjust width of email input */
+    width: calc(100% - 100px); 
   }
 }
-
 @media (max-width: 450px) {
   html {
-    font-size: 50%; /* Decrease font size for smaller screens */
+    font-size: 50%; 
   }
   .heading {
-    font-size: 3rem; /* Decrease heading font size */
+    font-size: 3rem; 
   }
   .newslatter form {
-    width: 90%; /* Adjust width of newsletter form */
+    width: 90%;
   }
 }

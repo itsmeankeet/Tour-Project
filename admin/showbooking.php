@@ -43,7 +43,6 @@
                   <th>Tour Date</th>
                   <th>Total Days</th>
                   <th>Status</th>
-                  <!-- <th>action</th> -->
                </tr>
             </thead>
             <?php while ($row = mysqli_fetch_assoc($select)) { ?>
@@ -56,10 +55,7 @@
                   <td><?php echo $row['tour_date']; ?></td>
                   <td><?php echo $row['num_days']; ?></td>
                   <td><?php echo $row['status']; ?></td>
-                  <!-- <td>
-                     <a href="#" class="btndsh">Accept </a>
-                     <a href="#" class="btndsh"> Reject </a>
-                  </td> -->
+
                </tr>
             <?php } ?>
          </table>
