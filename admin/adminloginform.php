@@ -27,7 +27,7 @@
           <div class="toggle-panel toggle-right">
             <h1>Hello, Admin!</h1>
             <p>
-              Register with admin's id and password to use all the features of site
+              Enter valid admin's id and password to use all the features of site
             </p>
           </div>
         </div>

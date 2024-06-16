@@ -14,33 +14,38 @@
 
     // Basic input validation
     if (empty($full_name) || empty($email) || empty($phone) || empty($destination) || empty($tour_date) || empty($num_days || empty($total_passengers))) {
-        echo "All fields are required.";
+        echo "<script>alert('All fields are required.');</script>";
+        echo "<script>location.href ='customerhomepage.html'</script>";
         exit;
     }
 
     // Validate email format
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format";
+        echo "<script>alert('Invalid email format');</script>";
+        echo "<script>location.href ='customerhomepage.html'</script>";
         exit;
     }
 
     // Validate phone number format
     if (!preg_match("/^[0-9]{10}$/", $phone)) {
-        echo "Invalid phone number format";
+        echo "<script>alert('Invalid phone number format');</script>";
+        echo "<script>location.href ='customerhomepage.html'</script>";
         exit;
     }
-    if (!preg_match("/^[0-9]$/", $num_days)) {
-        echo "Days cannot be negative";
+    //validate number of days
+    if (!preg_match("/^[1-9][0-9]*$/", $num_days)) {
+        echo "<script>alert('Number of Days cannot be negative');</script>";
+        echo "<script>location.href ='customerhomepage.html'</script>";
         exit;
     }
-    if (!preg_match("/^[0-9]$/", $num_days)) {
-        echo "Days cannot be negative";
+    //validate total passenger
+    
+    if (!preg_match("/^[1-9][0-9]*$/", $total_passengers)) {
+        echo "<script>alert('Total passenger cannot be negative');</script>";
+        echo "<script>location.href ='customerhomepage.html'</script>";
         exit;
     }
-    if (!preg_match("/^[0-9]$/", $total_passengers)) {
-        echo "Passeger cannot be negative";
-        exit;
-    }
+    
     // SQL query to insert data into the database
     $sql = "INSERT INTO booked_tours (full_name, email, phone, destination, tour_date, num_days, notes) 
             VALUES ('$full_name', '$email', '$phone', '$destination', '$tour_date', '$num_days', '$notes')";
@@ -50,7 +55,8 @@
 
     // Check if the query was successful
     if($result) {
-        echo "Your tour has been booked successfully. We will contact you soon.";
+        echo "<script>alert('Your tour has been submitted successfully. We will contact you soon.');</script>";
+        echo "<script>location.href ='customerhomepage.html'</script>";
     } else {
         // If there's an error, display the error message
         echo "Error: " . mysqli_error($conn);
@@ -58,4 +64,4 @@
 
     // Close the database connection
     mysqli_close($conn);
-?>
+    ?>>

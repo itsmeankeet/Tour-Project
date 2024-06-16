@@ -28,9 +28,8 @@
     $admin_query = "insert into admin (full_name, username, password) values ('$user_name', '$email_id', '$password' )";
     $admin_submit = mysqli_query($conn, $admin_query) or die(mysqli_error($conn));
 
-        echo "<script>alert('You have successfully Loged-In to  `Travel.com`');</script>";
-        echo "<script>alert('Log-In into your account using same credentials.');</script>";
-        echo "<script>window.location.href ='adminloginform.php'</script>";
+        echo "<script>alert('Successfully Added New Admin');</script>";
+        echo "<script>window.location.href ='admindashboard.php'</script>";
         }
 ?>
         </form>

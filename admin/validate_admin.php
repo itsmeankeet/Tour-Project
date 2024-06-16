@@ -21,7 +21,7 @@
     if(mysqli_num_rows($e_result) === 0)
       {
         echo "<script>alert('User with email  `$email_id`  dosn`t exists!');</script>";
-        echo "<script>location.href ='index.html'</script>";
+        echo "<script>location.href ='adminloginform.php'</script>";
       }
     elseif(mysqli_num_rows($e_result)>0)
       {
